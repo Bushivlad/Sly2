@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         SLY Assistant
+// @name         SLY2
 // @namespace    http://tampermonkey.net/
 // @version      0.6.26
 // @description  try to take over the world!
 // @author       SLY w/ Contributions by niofox, SkyLove512, anthonyra, [AEP] Valkynen, Risingson, Swift42
 // @match        https://*.based.staratlas.com/
 // @require      https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/anchor-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/buffer-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/bs58-browserified.js
+// @require      https://raw.githubusercontent.com/Bushivlad/Sly2/main/anchor-browserified.js
+// @require      https://raw.githubusercontent.com/Bushivlad/Sly2/main/buffer-browserified.js
+// @require      https://raw.githubusercontent.com/Bushivlad/Sly2/main/bs58-browserified.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -19,10 +19,10 @@
     'use strict';
 
     //Used for reading solana data
-    let customReadRPCs = [];
+    let customReadRPCs = ['https://solana-mainnet.rpc.extrnode.com/9c5f4f35-7767-4096-83f4-6ee181a4c46e',];
 
     //Used for pushing transactions to solana chain
-    let customWriteRPCs = [];
+    let customWriteRPCs = ['https://solana-mainnet.rpc.extrnode.com/9c5f4f35-7767-4096-83f4-6ee181a4c46e',];
 
     let saRPCs = [
         'https://rpc.ironforge.network/mainnet?apiKey=01HZFVRZ4A5WVX2NDA4PCPHJ7N',
